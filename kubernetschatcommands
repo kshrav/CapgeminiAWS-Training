@@ -33,6 +33,19 @@ curl -sfL https://get.k3s.io | sh -
    33  kubectl get svc
    34  kubectl set image deployment/myapp-deployment  myapp-container=gopal1409/chatapp --record
    35  kubectl get pod
+   62  kubectl get deploy
+   63  kubectl describe deploy myapp-deployment
+   64  kubectl rollout history deploy myapp-deployment
+   65  kubectl rollout history deploy myapp-deployment --revision=2
+   66  kubectl rollout history deploy myapp-deployment --revision=1
+   67  kubectl rollout undo deploy myapp-deployment
+   68  kubectl describe deploy myapp-deployment
+   69  kubectl rollout undo deploy myapp-deployment
+   70  kubectl describe deploy myapp-deployment
+   71  kubectl rollout history deploy myapp-deployment
+   72  kubectl rollout undo deploy myapp-deployment --to-revision=1
+   73  kubectl describe deploy myapp-deployment
+   74  kubectl get rs
    36  nano service.yaml
    37  kubectl apply -f service.yaml
    38  kubectl get svc
