@@ -1,0 +1,38 @@
+curl -sfL https://get.k3s.io | sh -
+    2  kubectl get nodes
+    3  nano deployment.yaml
+    4  kubectl apply -f
+    5  kubectl get deployment
+    6  kubectl get rs
+    7  kubectl get pod
+    8  kubectl get deploy
+    9  kubectl get rs
+   10  kubectl get deploy
+   11  kubectl describe deploy
+   12  kubectl describe rs
+   13  kubectl get pod
+   14  kubectl describe pod myapp-deployment-84fcb7989f-zwhk7
+   15  kubectl describe pod myapp-deployment-84fcb7989f-f224d
+   16  exit
+   17  kubectl get deploy
+   18  kubectl set image deployment/myapp-deployment  myapp-container=piuma/phpsysinfo
+   19  kubectl rollout status deployment/myapp-deployment
+   20  kubectl get rs
+   21  kubectl describe deploy myapp-deployment
+   22  kubectl rollout history deployment/myapp-deployment
+   23  kubectl set image
+   24  kubectl set image deployment/myapp-deployment  myapp-container=gopal1409/chatapp --record
+   25  kubectl rollout history deployment/myapp-deployment
+   26  kubectl get pod
+   27  nano service.yaml
+   28  kubectl get svc
+   29  nano service.yaml
+   30  kubectl apply -f service.yaml
+   31  kubectl get svc
+   32  kubectl apply -f service.yaml
+   33  kubectl get svc
+   34  kubectl set image deployment/myapp-deployment  myapp-container=gopal1409/chatapp --record
+   35  kubectl get pod
+   36  nano service.yaml
+   37  kubectl apply -f service.yaml
+   38  kubectl get svc
