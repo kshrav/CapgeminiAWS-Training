@@ -56,3 +56,12 @@ curl -sfL https://get.k3s.io | sh -
    35  kubectl get pod
    36  kubectl get svc
    37  kubectl describe svc myappsrv
+   [16:16] gopal (Guest)
+ 40  kubectl autoscale deploy myapp-deployment --min=10 --max=15 --cpu-percent=80
+
+   41  kubectl get hpa
+horizontal pod autoscaling
+  48  kubectl delete pod myapp-deployment-84fcb7989f-58wq4
+   49  kubectl get pod
+
+
