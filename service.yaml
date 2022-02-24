@@ -1,0 +1,14 @@
+apiVersion: v1 
+kind: Service
+metadata:
+  name: myappsrv
+
+spec:
+  type: NodePort #you can have LoadBalancer or you can have cluster ip
+  selector:
+    app: myapp 
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80 
+      nodePort: 31233
