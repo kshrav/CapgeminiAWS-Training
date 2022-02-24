@@ -49,3 +49,10 @@ curl -sfL https://get.k3s.io | sh -
    36  nano service.yaml
    37  kubectl apply -f service.yaml
    38  kubectl get svc
+   31  kubectl get deploy
+   32  kubectl scale deploy myapp-deployment --replicas=10
+   33  kubectl get pod
+   34  kubectl get rs
+   35  kubectl get pod
+   36  kubectl get svc
+   37  kubectl describe svc myappsrv
